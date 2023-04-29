@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  cugms-parser:
+    restart: unless-stopped
+    build:
+      context: ./cugms
+    volumes:
+      - "./data/cugms:/app/data"
